@@ -1,45 +1,387 @@
 <!doctype html>
 <html lang="en">
   <head>
+      <!--import csss-->
+
+      <link rel="stylesheet" href="/css/footer.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Hello, world!</title>
-    <style>
-        .col  {
-            border: solid black 3px;
-        }
-    </style>
   </head>
-  <body>
-    <div class="container" style="background: linear-gradient(red, silver);">
-        <h1 >Hello, world!</h1>
-        <div class="row" >
-            <div class="col" style="background: tomato;">50%</div>
-            <div class="col" style="background: wheat;">50%</div>
+  <body data-spy="scroll" data-target="#navega" data-offset="80">
+
+    <!--Secction header-->
+<header class="header">
+    <nav class="navbar navbar-expand-lg  fixed-top  navbar-dark" style="background-color:#00155cf6;" id="navega"> 
+
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="/img/Recurso 2.png" alt=""> 
+             
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span   class="navbar-toggler-icon"></span>
+          </button>
+          <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link textos__menu" aria-current="page" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link textos__menu" href="#experiencia">Experiencia</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link textos__menu" href="#ubicacion">Encuentranos</a>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link textos__menu" href="#contacto" data-bs-toggle="modal" data-bs-target="#modalcompra">Contacto</a>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+</header> 
+
+<!--Main-->
+<main class="main" id="inicio">
+
+    <div  class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/1.JPG" class="d-block w-100" alt="...">
+            <!--<div class="carousel-caption d-none d-md-block ">
+              <h5>Recuperacion de informacion</h5>
+              <p>Servicio de recuperacion forence de informacion de hard Disc</p>
+            </div>-->
+          </div>
+          <div class="carousel-item">
+            <!--
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>-->
+            <img src="/img/diseñoweb.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/Marketing digital.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="main__carousel--overlay">
+            <div class="container">
+              <div class="row align-items-center" >
+                <div class="offset-md-6 col-md-6 text-center text-md-end columna__parrafo">
+                  <h1>Digisoft</h1>
+                  <p class="d-none d-md-block">Digisoft es una empresa dedicada a la creacion de diferentes sitios y aplicaiones con tegnologia de punta,
+                    nos adaptamos a los diferentes requerimientos de nuestros clientes, contamos con una amplia experiencia
+                     en desarrolo e implementacion de software para diferentes tipos de negocio del pais.
+                  </p>
+
+                  <a href="http://" class="btn btn-outline-light">Contactar</a>
+                  <button type="button" class="btn btn-comprar">Adquirir un servicio</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+
+</main>
+<!--Speakers-->
+
+<section id="experiencia">
+    <div class="container-fluid" >
+      <div class="row">
+        <div class="col text-center text-uppercase">
+          <small>Nuestra experiencia</small>
+          <h2>En las mejores empresas de Bolivia</h2>
+        </div>
+      </div>
+      <div class="row mb-4">
+
+        <div class="col-md-4 col-lg-2 mt-2 ">
+          <div class="card">
+            <img class="card-img-top" src="/img/Empresas/Bancoganadero2.png" alt="Card image cap">
+            <div class="card-body">
+
+                <div class="badgets">
+                    <span class="badge badge badge-pill badge-success">Banca</span>
+                </div>
+                
+             
+              <h5 class="card-title">Banco Ganadero</h5>
+              
+                
+              
+              <p class="card-text">Banco Ganadero, la banca para personas y negocios donde encontrarás,
+                 tarjetas de crédito y financiamiento para tu hogar, negocio y vehículo.</p>
+              <!-- <a href="#" class="btn btn-primary">Vis</a>-->
+            </div>
+          </div>
         </div>
 
-        <div class="row">
-            <div class="col-10" style="background: red; ">Columna 1</div>
-            <div class="col-8" style="background-color: yellow;">Columna 2</div>
-            <div class="col-12" style="background: green;">Columna 3</div>
+        <div class="col-md-4 col-lg-2 mt-2 ">
+          <div class="card">
+            <img class="card-img-top" src="/img/Empresas/dIGICORP2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <div class="badgets">
+                <span class="badge badge badge-pill badge-success">Tecnologia</span>
+            </div>
+              <h5 class="card-title">Digicorp Ltda</h5>
+              <p class="card-text">Corporación Mayorista de Equipos Tecnológicos de Seguridad Electrónica, 
+                Redes, Telecomunicaciones y Herramientas.</p>
+              <!-- <a href="#" class="btn btn-primary">Vis</a>-->
+            </div>
+          </div>
         </div>
+
+        
+        <div class="col-md-4 col-lg-2 mt-2">
+          <div class="card">
+            <img class="card-img-top" src="/img/Empresas/Cognos.png" alt="Card image cap">
+            <div class="card-body">
+              <div class="badgets">
+                <span class="badge badge badge-pill badge-success">Educacion superior</span>
+            </div>
+              <h5 class="card-title">Cognos</h5>
+              <p class="card-text">Cognos es una empresa dedicada a entregar soluciones tecnológicas de excelencia.
+                  Más de 17 años de servicios avalan su trayectoria y liderazgo en este campo. </p>
+              <!-- <a href="#" class="btn btn-primary">Vis</a>-->
+            </div>
+          </div>
+        </div>
+
+
+        
+        <div class="col-md-4 col-lg-2 mt-2">
+          <div class="card">
+            <img class="card-img-top" src="/img/Empresas/Edudiseño.jpg" alt="Card image cap">
+            <div class="card-body">
+              <div class="badgets">
+                <span class="badge badge badge-pill badge-success">Marketing digital</span>
+            </div>
+              <h5 class="card-title">EduDiseño </h5>
+              <p class="card-text">EduDiseño Marketing Digital
+                Academia de cursos de:
+                🎯Marketing Digital
+                🎨Diseño Gráfico Multimedia
+                📸 Fotografía y Retoque Digital
+                📽️ Edición de Vídeo Profesional
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Vis</a>-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-md-4 col-lg-2 mt-2">
+          <div class="card">
+            <img class="card-img-top" src="/img/Empresas/Logo_Colegio_Franco_grande.png" alt="Card image cap">
+            <div class="card-body">
+              <div class="badgets">
+                <span class="badge badge badge-pill badge-success">Educaion tecnologica</span>
+            </div>
+              <h5 class="card-title">Franco Boliviano</h5>
+              <p class="card-text">La Cooperativa Educacional Franco Boliviano Santa Cruz R.L.
+                 es una Cooperativa de Educación Integral de carácter privado,  autónoma,
+                  de derecho cooperativo, de interés social y utilidad pública.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Vis</a>-->
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-lg-2 mt-2">
+          <div class="card">
+            <img class="card-img-top" src="/img/Empresas/SIAndariel.jpg" alt="Card image cap">
+            <div class="card-body">
+              <div class="badgets">
+                <span class="badge badge badge-pill badge-success">Infraestructura</span>
+            </div>
+              <h5 class="card-title">SIAndariel</h5>
+              <p class="card-text">SIAndariel es una empresa proveedora de correos corporativos,
+                 alojamientos web y dominios desde el 2001.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Vis</a>-->
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
     </div>
+
+
     
+</section>
+<!--Seccion de lugar - fecha-->
+  <section class="place__time" id="ubicacion">
+
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-12 col-sm-12 col-md-6  pl-0 pr-0  mb-0 pb-0">
+          <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d121577.516843155!2d-63.18093535931485!3d-17.777714615793894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1624299637928!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="col-12  col-md-6 pt-2">
+          <h2>
+            Estamos ubicados
+          </h2>
+         <p>Estamos ubicados en Santa Cruz  calle Francisco kempff .
+            Realizamos trabajos  al interior del país. Telf. 74970530 - Whatsapp 74970530</p>
+          <a  href="http://" class="btn btn-success mb-2">Conoce mas </a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+<!-- Formulario-->
+<section class="formulario" id="contacto">
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col text-uppercase text-center">
+      <small >Aquiere nuestro </small>
+      <h2>Servicio</h2>
+    </div>
+
+    <div class="row">
+      <div class="col text-center">
+        Escribenos para cotizar tu pagina web con los mejores <abbr data-toggle="tooltip" title="paginas desde 200$">precios</abbr> del mercado.
+        Cuentanos tus necesidades!!.
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col col-md-8 offset-2">
+
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Nosotros nunca compartimos tu correo con nadie</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" name="" id="nombre"  class="form-control">
+
+          </div>
+          <div class="mb-3">
+
+            <label for="descripcion">Cuentanos como podemos ayudarte</label>
+            <textarea name="" id="" cols="30" rows="8" class="form-control"></textarea>
+
+            
+          </div>
+         
+          <button type="submit" class="btn btn-success btn-block">Enviar</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+
+
+    <!--Section Footer-->
+    <footer class="footer pb-4 pt-4 mt-4"> 
+        <div class="container" >
+
+            <div class="row text-center">
+                <div class="col-12 col-md-6 col-lg">
+                    <a href="http://">Pregunta frecuentes</a> 
+                </div>
+                <div class="col-12 col-md-6 col-lg">
+                   <a href="http://"> Privacidad</a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg">
+                   <a href="http://">Condiciones</a>
+                 </div>
+                <div class="col-12 col-md-6  col-lg">
+                  <a href="">Ayuda</a> 
+                 </div>
+
+            </div>
+
+        </div>
+        
+    </footer>
+
+<!--lonch-->
+
+<!--Modal compra-->
+
+<div class="modal fade" id="modalcompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Adquirir un servicio</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+       <form action="">
+        <div class="row"><div class="col"> 
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+          Te responderemos  lo antes posibles!!
+        </div>
+
+        </div></div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-success">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/js/toggle.js"></script>
   </body>
 </html>
